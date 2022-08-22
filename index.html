@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <title>Management System</title>
+  </head>
+  <body>
+    <div class="cruds">
+      <!-- <i class="fa-solid fa-sun"></i> -->
+      <div class="container">
+        <div class="head">
+          <h1>Product Management System</h1>
+          <div data-mood="dark" class="icon">
+            <i class="fa-solid fa-sun"></i>
+          </div>
+        </div>
+        <div class="form">
+          <div class="title">
+            <input type="text" placeholder="Title" />
+          </div>
+          <div class="price">
+            <input class="main-price" type="number" placeholder="Price" />
+            <input class="taxes" type="number" placeholder="Taxes" />
+            <input class="ads" type="number" placeholder="Ads" />
+            <input class="discount" type="number" placeholder="Discoun" />
+            <div class="total">
+              Total :
+              <span>0</span>
+            </div>
+          </div>
+          <input class="count" type="number" placeholder="Count" />
+          <input class="cat" type="text" placeholder="Category" />
+          <button class="submit btn">Create</button>
+          <input class="search" type="search" placeholder="Search For Title" />
+          <button class="delete btn">Delete</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>title</th>
+              <th>price</th>
+              <th>taxes</th>
+              <th>ads</th>
+              <th>discount</th>
+              <th>total</th>
+              <th>Category</th>
+              <th>update</th>
+              <th>delete</th>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+            <td>ID</td>
+            <td>title</td>
+            <td>price</td>
+            <td>taxes</td>
+            <td>ads</td>
+            <td>discount</td>
+            <td>total</td>
+            <td>Category</td>
+            <td class="del">update</td>
+            <td class="update">delete</td>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="to-top"><i class="fa-solid fa-angle-up"></i></div>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

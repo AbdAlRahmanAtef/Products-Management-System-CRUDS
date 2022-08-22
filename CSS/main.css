@@ -1,0 +1,206 @@
+:root {
+  --background-color: #222;
+  --text-color: #fff;
+  --input-color: #000;
+  --btn-color: #042f66;
+  --text-color-alt: #777;
+}
+
+/*Main Button*/
+.btn {
+  cursor: pointer;
+  background-color: var(--btn-color);
+  font-weight: bold;
+  font-size: 22px;
+  width: 100%;
+  border: 2px solid transparent;
+  color: #fff;
+  transition: 0.3s;
+  height: 40px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+.btn:hover {
+  transform: scale(1.05);
+  letter-spacing: 3px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.cruds {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  padding: 30px 30px 15px;
+}
+.cruds .container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  max-width: 900px;
+  text-align: center;
+}
+.cruds .container .head h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 15px 10px 20px;
+  background-color: var(--input-color);
+  border-radius: 50px;
+  color: var(--text-color);
+  font-weight: 900;
+  line-height: 1;
+}
+.cruds .container .head .icon {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  background-color: var(--input-color);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  top: 30px;
+  right: 20px;
+  color: var(--text-color);
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cruds .container .head .icon:hover {
+  opacity: 0.7;
+}
+.cruds .form input:not([type=submit]) {
+  height: 40px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: 0.3s;
+  font-size: 18px;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+.cruds .form input:not([type=submit]):focus {
+  outline: none;
+  border-color: var(--btn-color);
+}
+.cruds .form .title input {
+  width: 100%;
+}
+.cruds .form .price {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.cruds .form .price input {
+  width: 19%;
+}
+.cruds .form .price .total {
+  width: 19%;
+  background-color: var(--input-color);
+  height: 40px;
+  padding: 10px;
+  color: var(--text-color-alt);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cruds .form .cat,
+.cruds .form .search,
+.cruds .form .count {
+  width: 100%;
+}
+.cruds .form .delete {
+  display: none;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+table th {
+  color: var(--text-color-alt);
+  text-transform: uppercase;
+  background-color: var(--input-color);
+  padding: 5px;
+  min-width: 50px;
+  width: fit-content;
+  border-radius: 10px;
+}
+table td {
+  width: fit-content;
+  padding: 5px;
+  color: var(--text-color);
+  position: relative;
+  font-size: 18px;
+  border-bottom: 1px solid #fff;
+}
+table td:nth-child(9), table td:nth-child(10) {
+  border: none;
+}
+table td .update,
+table td .del {
+  background-color: var(--btn-color);
+  color: #fff;
+  outline: none;
+  height: 30px;
+  width: 80px;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  user-select: none;
+}
+table td .update:hover,
+table td .del:hover {
+  transform: scale(1.05);
+  letter-spacing: 1px;
+}
+
+.to-top i {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 25px;
+  color: var(--input-color);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  background-color: var(--text-color);
+  transition: 0.3s;
+}
+.to-top i:hover {
+  opacity: 0.6;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+  box-shadow: inset -10px -10px 10px #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #042f66;
+  border-radius: 10px;
+}
